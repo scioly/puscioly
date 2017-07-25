@@ -45,48 +45,52 @@
 
   <body>
     <!-- Static navbar -->
-    <nav class="navbar navbar-default navbar-static-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div id="navbar" class="navbar-collapse navbar-center collapse">
-            <ul class="nav navbar-nav">
-              <!-- disable hover effect on logo -->
-              <li><a href="index.html" style = "background-color: transparent;"><img src="img/logo.png" class="logo"></a></li>
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="info.html">TOURNAMENT INFORMATION</a></li>
-              <li><a href="updates.html">UPDATES</a></li>
-              <li><a href="team.html">THE TEAM</a></li>
-              <li><a href="partners.html">PARTNERS</a></li>
-              <li class="dropdown"><a href="past" data-toggle="dropdown" class="dropdown-toggle">ARCHIVE <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="past-tests.html">ALL TESTS</a></li>
-                  <li class="divider"></li>
-                  <li><a href="past/2017/index.html">2017</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
+        <div id="navbar" class="navbar-collapse navbar-center collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="about.html">About</a></li>
+            <li><a href="info.html">Tournament Information</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <li class="active"><a href="team.html">The Team</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li class="dropdown"><a href="past" data-toggle="dropdown" class="dropdown-toggle">Archive <b class="caret"></b></a>
+              <ul class="dropdown-menu pull-right">
+                <li><a href="past-tests.html" style="margin: 0">All Tests</a></li>
+                <li class="divider"></li>
+                <li><a href="past/2017/index.html">2017 Site</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <div class="container">
-      <h1 class="section-title">LEADERSHIP</h1>
+    <div class="container content">
+      <h1 class="section-title">Leadership</h1>
+      <p>Click on each profile to read the bio!</p>
+      <hr>
       <div id="profiles">
-        <h2>Tournament Directors</h2>
+        <h2 class="section-subtitle">Tournament Directors</h2>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-12">
+            <p class="section-description">Will and Shirley are responsible for overseeing all aspects of the competition!</p>
+          </div>
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#will-jiao-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/will.jpg" alt="William Jiao">
                   <div class="description">
-                    <div class="officer-name">William Jiao '20</div>
+                    <div class="profile-name">William Jiao '20</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="will-jiao-bio">
@@ -96,13 +100,13 @@
               </li>
             </ul>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#shirley-zhang-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/shirley.png" alt="Shirley Zhang">
                   <div class="description">
-                    <div class="officer-name">Shirley Zhang '20</div>
+                    <div class="profile-name">Shirley Zhang '20</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="shirley-zhang-bio">
@@ -115,103 +119,109 @@
           </div>
         </div>
 
-        <h2>Directors Emeritus</h2>
+        <h2 class="section-subtitle">Directors Emeritus</h2>
         <div class="row">
-          <div class="col-sm-6">
+        <div class="col-md-12">
+            <p class="section-description">After directing the tournament last year, David and Eddie are taking on an advisory role this year!</p>
+          </div>
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#david-fan-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/david.jpg" alt="David Fan">
                   <div class="description">
-                    <div class="officer-name">David Fan '19</div>
+                    <div class="profile-name">David Fan '19</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="david-fan-bio">
-                  David is a computer science major from Montgomery High School pursuing certificates in computational biology and machine learning. He competed for six lovely years with the Montgomery Middle School and High School teams. David has supervised events at many tournaments, including Green Generation at the 2016 MIT Invitational, and is now passionate about contributing his experiences to raise the level of Science Olympiad tournaments nationwide. In high school, David directed New Jersey’s first invitational tournament in history. Last year, he co-founded and directed the first ever Princeton University Science Olympiad Invitational. This year, David is excited to advise Princeton University Science Olympiad in its second year. On campus, David also directs HackPrinceton, plays club table tennis, and occasionally practices his clarinet...
+                  David is a computer science major from Montgomery High School pursuing certificates in computational biology and machine learning. He competed in Science Olympiad for six lovely years with the Montgomery Middle School and High School teams. David has supervised events at many tournaments, including Green Generation at the 2016 MIT Invitational, and is now passionate about contributing his experiences to raise the level of Science Olympiad tournaments nationwide. In high school, David directed New Jersey’s first invitational tournament in history. Last year, he co-founded and directed the first ever Princeton University Science Olympiad Invitational. This year, David is excited to advise Princeton University Science Olympiad in its second year. On campus, David also directs HackPrinceton, plays club table tennis, and occasionally practices his clarinet...
                 </div>
               </li>
             </ul>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#edison-lee-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/eddie.jpg" alt="Edison Lee">
                   <div class="description">
-                    <div class="officer-name">Edison Lee '19</div>
+                    <div class="profile-name">Edison Lee '19</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="edison-lee-bio">
-                  Eddie Lee is a rising junior from West Windsor-Plainsboro North majoring in Chemistry. He has competed with in Science Olympiad for six years and lead his team to nationals during his senior year. His extensive experience competing in ecology-related events inspired a love of plants, and he enjoys escaping to the outdoors. After starting and co-directing Princeton's inaugural invitational, he hopes to use his experience to and help our new team run its best tournament yet!
+                  Eddie Lee is a rising junior from West Windsor-Plainsboro North majoring in Chemistry. He competed in Science Olympiad for six years and led the WW-P North team to nationals during his senior year. His extensive experience competing in ecology-related events inspired a love of plants, and he now enjoys escaping to the outdoors. After starting and co-directing Princeton's inaugural invitational, he hopes to use his experience to help the newly expanded team run its best tournament yet!
                 </div>
               </li>
             </ul>
           </div>
         </div>
 
-        <h2>Finance Committee</h2>
+        <h2 class="section-subtitle">Content Committee</h2>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-12">
+            <p class="section-description">The Content Committee is responsible for revising all tests for content, difficulty spread, relevancy and scorability, as well working with event supervisors to ensure all events have the materials and setups needed.</p>
+          </div>
+          <div class="col-md-6">
             <ul class="list-group">
-              <li class="list-group-item" data-toggle="collapse" href="#audrey-shih-bio" aria-expanded="false">
+              <li class="list-group-item" data-toggle="collapse" href="#yusha-sun-bio" aria-expanded="false">
                 <div class="profile-main">
-                  <img src="img/bios/audrey.png" alt="Audrey Shih">
+                  <img src="img/bios/yusha.png" alt="Yusha Sun">
                   <div class="description">
-                    <div class="officer-name">Audrey Shih '20</div>
-                    <div class="officer-title">Director</div>
+                    <div class="profile-name">Yusha Sun '20</div>
+                    <div class="profile-title">Chemistry Events</div>
                   </div>
                 </div>
-                <div class="collapse profile-bio" id="audrey-shih-bio">
-                  Audrey is a sophomore from Columbus, Ohio in the CBE department.
-                  She is excited to be involved with Science Olympiad in a role that does not involve getting fingers superglued together (or worse, onto the project), and other science-y risks. In her free time, Audrey enjoys playing piano and clarinet, occasionally composing music or drawing, and questioning her major choice."
+                <div class="collapse profile-bio" id="yusha-sun-bio">
+                  Yusha is a sophomore in the Physics department. He is from College Station, TX, where he competed in Science Olympiad throughout all of high school. In 2016, he was one of 20 USNCO finalists. Besides Science Olympiad, he enjoys playing piano, thinking of puns, and synthesizing colorful compounds. Last year, he supervised the Forensics event at the 2016 Princeton University Invitational. This year, he's excited to help make Princeton SciOly an amazing experience for all!
                 </div>
               </li>
             </ul>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
-              <li class="list-group-item" data-toggle="collapse" href="#juneho-park-bio" aria-expanded="false">
+              <li class="list-group-item" data-toggle="collapse" href="#bill-huang-bio" aria-expanded="false">
                 <div class="profile-main">
-                  <img src="img/bios/june-ho.jpg" alt="June-Ho Park">
+                  <img src="img/bios/bill.jpg" alt="Bill Huang">
                   <div class="description">
-                    <div class="officer-name">June-Ho Park '20</div>
-                    <div class="officer-title">Treasurer</div>
+                    <div class="profile-name">Bill Huang '19</div>
+                    <div class="profile-title">Earth Science Events</div>
                   </div>
                 </div>
-                <div class="collapse profile-bio" id="juneho-park-bio">
-                  June Ho is a sophomore from Orange County, California who is likely going to be a BSE ORFE major. Although he didn’t compete in Science Olympiad in high school, he did compete in Chemistry Olympiad and enjoyed supervising one of the events last year. He is excited to serve as the Co-Director of Finance this year! Outside of schoolwork and Scioly, June enjoys painting, photography, and video games.
+                <div class="collapse profile-bio" id="bill-huang-bio">
+                  Bill is currently a junior majoring in Mathematics, but knows a surprising amount of Earth Science. He is still salty (and probably will always be) about choking Experimental Design at states, but still has plenty of fond memories (and lots of medals) from his years of Science Olympiad with West Windsor-Plainsboro High School South. If he's running your event, chances are the test will be rather difficult, so be prepared :) In his free time, he enjoys swimming (which comes with great pregames) and playing piano, but usually ends up wasting all of it on Steam. Last year, Bill was the event supervisor for Astronomy.
                 </div>
               </li>
             </ul>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
-              <li class="list-group-item" data-toggle="collapse" href="#ariel-chen-bio" aria-expanded="false">
+              <li class="list-group-item" data-toggle="collapse" href="#cam-on-nguyen-bio" aria-expanded="false">
                 <div class="profile-main">
-                  <img src="img/bios/ariel.png" alt="Ariel Chen">
+                  <img src="img/bios/placeholder.png" alt="Cam On Nguyen">
                   <div class="description">
-                    <div class="officer-name">Ariel Chen '20</div>
+                    <div class="profile-name">Cam On Nguyen '20</div>
+                    <div class="profile-title">Biology Events</div>
                   </div>
                 </div>
-                <div class="collapse profile-bio" id="ariel-chen-bio">
-                  Ariel is a sophomore interested in Computer Science department and potentially pursuing the Quantitative and Computational Biology certificate. She participated in Science Bowl throughout high school, but don't worry, she's seen the light and joined Science Olympiad. Though her home state of Texas will always be her favorite, New Jersey has grown on her.
-                  When not in class or lab, she enjoys running and pretending that her store-bought cookie dough is actually from scratch.
+                <div class="collapse profile-bio" id="cam-on-nguyen-bio">
+                  Coming soon...
                 </div>
               </li>
             </ul>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
-              <li class="list-group-item" data-toggle="collapse" href="#akhil-rajasekar-bio" aria-expanded="false">
+              <li class="list-group-item" data-toggle="collapse" href="#seth-lovelace-bio" aria-expanded="false">
                 <div class="profile-main">
-                  <img src="img/bios/placeholder.png" alt="Akhil Rajasekar">
+                  <img src="img/bios/placeholder.png" alt="Seth Lovelace">
                   <div class="description">
-                    <div class="officer-name">Akhil Rajasekar '20</div>
+                    <div class="profile-name">Seth Lovelace '20</div>
+                    <div class="profile-title">Building Events</div>
                   </div>
                 </div>
-                <div class="collapse profile-bio" id="akhil-rajasekar-bio">
+                <div class="collapse profile-bio" id="seth-lovelace-bio">
                   Coming soon...
                 </div>
               </li>
@@ -219,31 +229,32 @@
           </div>
         </div>
 
-        <h2>Logistics Committee</h2>
+        <h2 class="section-subtitle">Logistics Committee</h2>
+        <p class="section-description">The Logistics Committee is responsible for ensuring that all logistical aspects of the competition run smoothly, from team check-in to food, t-shirts, room allocation, event material distribution, awards, grading, volunteers, etc.</p>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#reilly-bova-bio" aria-expanded="false">
                 <div class="profile-main">
-                  <img src="img/bios/placeholder.png" alt="Reilly Bova">
+                  <img src="img/bios/reilly.jpg" alt="Reilly Bova">
                   <div class="description">
-                    <div class="officer-name">Reilly Bova '20</div>
-                    <div class="officer-title">Director</div>
+                    <div class="profile-name">Reilly Bova '20</div>
+                    <div class="profile-title">Director</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="reilly-bova-bio">
-                  Coming soon...
+                  Reilly is a sophomore from Philadelphia, PA and a proud alumnus of the Harriton High School SciOly team. Last year, Reilly served as the Head Event Supervisor for Chemistry Lab, and he is really looking forward to serving as the Logistics Director for next year's competition! Although he has no idea what he wants to do with his life, Reilly's passion for computer science has driven him to pursue a BSE COS degree, which he supplements with studies related to his other passions such as music, physics, and Latin. Outside of class, Reilly loves watching movies, eating good food (especially sushi), and — above all else — playing percussion in the fantastic Princeton University Orchestra!
                 </div>
               </li>
             </ul>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#manasseh-alexander-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/manasseh.jpg" alt="Manasseh Alexander">
                   <div class="description">
-                    <div class="officer-name">Manasseh Alexander '20</div>
+                    <div class="profile-name">Manasseh Alexander '20</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="manasseh-alexander-bio">
@@ -254,33 +265,105 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#bertha-wang-bio" aria-expanded="false">
                 <div class="profile-main">
-                  <img src="img/bios/placeholder.png" alt="Bertha Wang">
+                  <img src="img/bios/bertha.png" alt="Bertha Wang">
                   <div class="description">
-                    <div class="officer-name">Bertha Wang '18</div>
+                    <div class="profile-name">Bertha Wang '18</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="bertha-wang-bio">
-                  Coming soon...
+                  Bertha grew up nearby in Hillsborough, New Jersey, and is a senior in the mechanical and aerospace engineering department. She's a dog person, loves Mini Coopers, and used to quote "How I Met Your Mother" at least once a day. She loved competing with her Science Olympiad team in high school, and is excited to welcome teams from across the country to campus this year!
                 </div>
               </li>
             </ul>
           </div>
         </div>
 
-        <h2>Communications</h2>
+        <h2 class="section-subtitle">Finance Committee</h2>
+        <p class="section-description">The Finance Committee is responsible for landing sponsorships, and ordering and tracking expenses.</p>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item" data-toggle="collapse" href="#audrey-shih-bio" aria-expanded="false">
+                <div class="profile-main">
+                  <img src="img/bios/audrey.png" alt="Audrey Shih">
+                  <div class="description">
+                    <div class="profile-name">Audrey Shih '20</div>
+                    <div class="profile-title">Director</div>
+                  </div>
+                </div>
+                <div class="collapse profile-bio" id="audrey-shih-bio">
+                  Audrey is a sophomore from Columbus, Ohio in the CBE department.
+                  She is excited to be involved with Science Olympiad in a role that does not involve getting fingers superglued together (or worse, onto the project), and other science-y risks. In her free time, Audrey enjoys playing piano and clarinet, occasionally composing music or drawing, and questioning her major choice."
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item" data-toggle="collapse" href="#juneho-park-bio" aria-expanded="false">
+                <div class="profile-main">
+                  <img src="img/bios/june-ho.jpg" alt="June-Ho Park">
+                  <div class="description">
+                    <div class="profile-name">June-Ho Park '20</div>
+                    <div class="profile-title">Treasurer</div>
+                  </div>
+                </div>
+                <div class="collapse profile-bio" id="juneho-park-bio">
+                  June Ho is a sophomore from Orange County, California who is likely going to be a BSE ORFE major. Although he didn’t compete in Science Olympiad in high school, he did compete in Chemistry Olympiad and enjoyed supervising one of the events last year. He is excited to serve as the Co-Director of Finance this year! Outside of schoolwork and Scioly, June enjoys painting, photography, and video games.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item" data-toggle="collapse" href="#ariel-chen-bio" aria-expanded="false">
+                <div class="profile-main">
+                  <img src="img/bios/ariel.png" alt="Ariel Chen">
+                  <div class="description">
+                    <div class="profile-name">Ariel Chen '20</div>
+                  </div>
+                </div>
+                <div class="collapse profile-bio" id="ariel-chen-bio">
+                  Ariel is a sophomore interested in Computer Science department and potentially pursuing the Quantitative and Computational Biology certificate. She participated in Science Bowl throughout high school, but don't worry, she's seen the light and joined Science Olympiad. Though her home state of Texas will always be her favorite, New Jersey has grown on her.
+                  When not in class or lab, she enjoys running and pretending that her store-bought cookie dough is actually from scratch.
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item" data-toggle="collapse" href="#akhil-rajasekar-bio" aria-expanded="false">
+                <div class="profile-main">
+                  <img src="img/bios/akhil.jpg" alt="Akhil Rajasekar">
+                  <div class="description">
+                    <div class="profile-name">Akhil Rajasekar '20</div>
+                  </div>
+                </div>
+                <div class="collapse profile-bio" id="akhil-rajasekar-bio">
+                  Akhil is a sophomore from Bethel Park, PA in the Politics department, and will likely end up in law school at some point. Aside from judicial politics and American jurisprudence, he also enjoys chemistry, biophysics, data analysis, and learning new languages. Outside of Science Olympiad at Princeton, Akhil is a part of Model Congress, Army ROTC, the James Madison Program, Outdoor Action, and the Tory. Akhil speaks seven languages and is the ideal companion for any international trip :) Last year, Akhil supervised the Chem Lab event with Reilly and is excited to make this year's tournament even better!
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 class="section-subtitle">Communications</h2>
+        <p class="section-description">The Communications Committee is responsible for managing our outreach to teams via email and social media, as well as liasoning with departments on campus to ensure that all parties are well informed about tournament.</p>
+        <div class="row">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#annie-zou-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/annie.jpg" alt="Annie Zou">
                   <div class="description">
-                    <div class="officer-name">Annie Zou '20</div>
-                    <div class="officer-title">Director</div>
+                    <div class="profile-name">Annie Zou '20</div>
+                    <div class="profile-title">Director</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="annie-zou-bio">
@@ -291,14 +374,14 @@
               </li>
             </ul>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#yunah-kim-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/yunah.jpg" alt="Yunah Kim">
                   <div class="description">
-                    <div class="officer-name">Yunah Kim '20</div>
-                    <div class="officer-title">Director and Design Lead</div>
+                    <div class="profile-name">Yunah Kim '20</div>
+                    <div class="profile-title">Director and Design Lead</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="yunah-kim-bio">
@@ -311,28 +394,28 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#sanna-lee-bio" aria-expanded="false">
                 <div class="profile-main">
-                  <img src="img/bios/placeholder.png" alt="Sanna Lee">
+                  <img src="img/bios/sanna.png" alt="Sanna Lee">
                   <div class="description">
-                    <div class="officer-name">Sanna Lee '20</div>
+                    <div class="profile-name">Sanna Lee '20</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="sanna-lee-bio">
-                  Coming soon...
+                  Sanna hailed from Brooklyn, NY before her family recently moved to New York City’s least favorite child– Staten Island. Refrain from asking Sanna about her current course schedule, but do ask her about her high school SciOly experience, her cat Moomoo, and her mango allergy. She had an amazing time working with the team last year to run the first Princeton University Invitational and is excited to be back!
                 </div>
               </li>
             </ul>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#rosamund-van-wingerden-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/placeholder.png" alt="Rosamund van Wingerden">
                   <div class="description">
-                    <div class="officer-name">Rosamund van Wingerden '20</div>
+                    <div class="profile-name">Rosamund van Wingerden '20</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="rosamund-van-wingerden-bio">
@@ -343,98 +426,29 @@
           </div>
         </div>
 
-        <h2>Content Committee</h2>
+        <h2 class="section-subtitle">Tech Team</h2>
+        <p class="section-description">The Tech Team is responsible for creating and maintaining tools that aid the team in running the tournament.</p>
         <div class="row">
-          <div class="col-sm-6">
-            <ul class="list-group">
-              <li class="list-group-item" data-toggle="collapse" href="#yusha-sun-bio" aria-expanded="false">
-                <div class="profile-main">
-                  <img src="img/bios/placeholder.png" alt="Yusha Sun">
-                  <div class="description">
-                    <div class="officer-name">Yusha Sun '20</div>
-                    <div class="officer-title">Chemistry Events</div>
-                  </div>
-                </div>
-                <div class="collapse profile-bio" id="yusha-sun-bio">
-                  Coming soon...
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-sm-6">
-            <ul class="list-group">
-              <li class="list-group-item" data-toggle="collapse" href="#bill-huang-bio" aria-expanded="false">
-                <div class="profile-main">
-                  <img src="img/bios/placeholder.png" alt="Bill Huang">
-                  <div class="description">
-                    <div class="officer-name">Bill Huang '19</div>
-                    <div class="officer-title">Earth Science Events</div>
-                  </div>
-                </div>
-                <div class="collapse profile-bio" id="bill-huang-bio">
-                  Bill is currently a junior majoring in Mathematics, but knows a surprising amount of Earth Science. He is still salty (and probably will always be) about choking Experimental Design at states, but still has plenty of fond memories (and lots of medals) from his years of Science Olympiad with West Windsor-Plainsboro High School South. If he's running your event, chances are the test will be rather difficult, so be prepared :) In his free time, he enjoys swimming (which comes with great pregames) and playing piano, but usually ends up wasting all of it on Steam.
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <ul class="list-group">
-              <li class="list-group-item" data-toggle="collapse" href="#cam-on-nguyen-bio" aria-expanded="false">
-                <div class="profile-main">
-                  <img src="img/bios/placeholder.png" alt="Cam On Nguyen">
-                  <div class="description">
-                    <div class="officer-name">Cam On Nguyen '20</div>
-                    <div class="officer-title">Biology Events</div>
-                  </div>
-                </div>
-                <div class="collapse profile-bio" id="akhil-rajasekar-bio">
-                  Coming soon...
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-sm-6">
-            <ul class="list-group">
-              <li class="list-group-item" data-toggle="collapse" href="#seth-lovelace-bio" aria-expanded="false">
-                <div class="profile-main">
-                  <img src="img/bios/placeholder.png" alt="Seth Lovelace">
-                  <div class="description">
-                    <div class="officer-name">Seth Lovelace '20</div>
-                    <div class="officer-title">Building Events</div>
-                  </div>
-                </div>
-                <div class="collapse profile-bio" id="seth-lovelace-bio">
-                  Coming soon...
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <h2>Tech Team</h2>
-        <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#yun-teng-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/placeholder.png" alt="Yun Teng">
                   <div class="description">
-                    <div class="officer-name">Yun Teng '19</div>
-                    <div class="officer-title">Webmaster</div>
+                    <div class="profile-name">Yun Teng '19</div>
+                    <div class="profile-title">Webmaster</div>
                   </div>
                 </div>
-                <div class="collapse profile-bio" id="seth-lovelace-bio">
-                  Coming soon...
+                <div class="collapse profile-bio" id="yun-teng-bio">
+                  Yun is a former Science Olympiad building event enthusiast from Camas High School in Washington state, who medaled at the national tournament in 2012 (1st place - Sounds of Music), 2014 (5th place - ELG), and 2015 (5th place - Wright Stuff). He now aims to make the build event experience at Princeton University Invitational as great as it can be, and hopes that more students can be inspired to try their hand at engineering. Along with David, he redesigned the entire site this past summer and hopes that you like it :)
                 </div>
               </li>
             </ul>
           </div>
         </div>
 
-        <h2>Event Supervisors</h2>
-        <p>Coming soon!</p>
+        <h2 class="section-subtitle">Event Supervisors</h2>
+        <p class="section-description">Coming soon!</p>
 
       </div>
     </div>
